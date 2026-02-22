@@ -1,0 +1,203 @@
+/* Slectors in CSS */
+/* 1.simple selector */
+/* 2.combinator selector */
+/* 3.pseudo class selector */
+/* 4.pseudo-element selector */
+/* 5.attribute selector */
+
+/* 1.simple selector types */
+/* 1.id (#) */
+/* 2.class (.) */
+/* 3.Tag (Tag name) */
+/* 4.Grouping (,) */
+/* 5.Universal (*) */
+
+/* 1.id selector */
+/* #heading{
+    color: blue;
+} */
+
+/* 2.class selector */
+/* .heading{
+    color: blue;
+} */
+
+/* 3.Tag selector */
+/* h1{
+    color: blue;
+} */
+
+/* 4.Grouping selector */
+/* h1, h2, h3{
+    color: blue;
+} */
+
+/* 5.Universal selector */
+/* *{
+    color: blue;
+} */
+
+/* /2.Combinator selector */
+/* 1.Descendant selector  (space) */
+/* 2.Child selector(>) */
+/* 3.Adjacent sibling selector (div+h1)*/
+/* 4.General sibling selector (~)*/
+
+/* 1.Descendant selector */
+/* div h1{
+    color: blue;
+} */    
+
+/* 2.Child selector */
+/* div>h1{
+    color: blue;
+} */
+
+/* 3.Adjacent sibling selector */
+/* div+h1{
+    color: blue;
+} */
+
+/* 4.General sibling selector */
+/* div~h1{
+    color: blue;
+} */
+
+/* 3.Pseudo class selector */
+/* 2 types- 1.Dynamic pseudo class 
+            2.Structural pseudo class */
+/* 1.link */
+/* 2.visited */
+/* 3.hover */
+/* 4.active */
+
+/* 1.link */
+/* a:link{
+    color: blue;
+} */
+
+/* 2.visited */
+/* a:visited{
+    color: blue;
+} */
+
+/* 3.hover */
+/* a:hover{
+    color: blue;
+} */
+
+/* 4.active */
+/* a:active{
+    color: blue;
+} */
+
+/* 2.Structural pseudo class */
+/* 1.first-child */
+/* 2.last-child */
+/* 3.nth-child() */
+/* 4.first-of-type() */
+/* 5.last-of-type() */
+
+/* 1.first-child */
+
+/* div:first-child{
+    color: blue;
+} */
+
+/* 2.last-child */
+/* div:last-child{
+    color: blue;
+} */
+
+/* 3.nth-child() */
+/* div:nth-child(2){
+    color: blue;
+} */
+
+/* 4.first-of-type() */
+/* div:first-of-type{
+    color: blue;
+} */
+
+/* 5.last-of-type() */
+/* div:last-of-type{
+    color: blue;
+} */
+
+
+
+/* 4.Pseudo-element selector */
+/* 1.before */
+/* 2.after */
+/* 3.first-letter */
+/* 4.first-line */
+/* 5.marker */
+/* 6.Selection */
+
+
+/* 1.before */
+/* div::before{
+    content: "Hello";
+    color: blue;
+} */
+
+/* 2.after */
+/* div::after{
+    content: "Hello";
+    color: blue;
+} */
+
+/* 3.first-letter */
+/* p::first-letter{
+    color: blue;
+} */
+
+/* 4.first-line */
+/* p::first-line{
+    color: blue;
+} */
+
+/* 5.marker */
+/* li::marker{
+    color: blue;
+} */
+
+/* 6.Selection */
+/* ::selection{
+    color: blue;
+} */
+
+/* 5.Attribute selector */
+/* 1.[attribute] */
+/* 2.[attribute=value] */
+/* 3.[attribute^=value] */
+/* 4.[attribute$=value] */
+/* 5.[attribute*=value] */
+
+/* 1.[attribute] */
+/* input[type]{
+    color: blue;
+} */
+
+/* 2.[attribute=value] */
+/* input[type="text"]{
+    color: blue;
+} */
+
+/* 3.[attribute^=value] */
+/* input[type^="t"]{
+    color: blue;
+} */
+
+/* 4.[attribute$=value] */
+/* input[type$="t"]{
+    color: blue;
+} */
+
+/* 5.[attribute*=value] */
+/* input[type*="t"]{
+    color: blue;
+} */
+
+
+

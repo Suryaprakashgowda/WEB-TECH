@@ -1,0 +1,109 @@
+<form action="https://www.youtube.com" method="post"  autocomplete="on">
+    <fieldset>
+        <legend>login page</legend>
+        <label for="username">Username:</label> 
+        <input type="text" id="username" name="username">
+        <br><br>
+         <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br><br> <input type="submit" value="Login"> 
+    </fieldset>
+</form>
+
+<hr>
+
+<!-- sing up page -->
+ <form action="" method="post">
+    <fieldset>
+        <legend>Sign Up</legend> 
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email"> 
+        <br><br> 
+        <label for="password">Password:</label> 
+        <input type="password" id="password" name="password"> 
+        <br><br> 
+        <label for="confirm_password">Confirm Password:</label> 
+        <input type="password" id="confirm_password" name="confirm_password">
+         <br><br>
+        <input type="submit" value="Sign Up">
+    </fieldset>
+ </form>
+
+ <!-- input types -->
+<form action="" method="post">
+    <fieldset>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender"value="other"> 
+        <label for="other">Other</label>
+        <br><br> 
+        <label for="hobbies">Hobbies:</label> 
+        <input type="checkbox" id="hobby1" name="hobbies" value="hobby1"> 
+        <label for="hobby1">Hobby 1</label>
+         <input type="checkbox" id="hobby2" name="hobbies" value="hobby2">
+          <label for="hobby2">Hobby 2</label> 
+          <input type="checkbox" id="hobby3" name="hobbies" value="hobby3">
+           <label for="hobby3">Hobby 3</label> <br><br> 
+           <input type="submit" value="Submit">
+
+
+           <input type="reset" value="Reset">
+           <br>
+        <input type="number">
+        <input type="range"> 
+        <br> 
+        <input type="color">
+        <br>
+        <input type="date"> 
+        <br>
+        <input type="datetime-local"> 
+        <br>
+        <input type="email"> 
+        <br>
+        <input type="month"> 
+        <br>
+        <input type="search"> 
+        <input type="tel"> 
+        <br>
+        <input type="time">
+         <input type="url"> 
+         <input type="week">
+
+
+         <br> <input type="file"> 
+         <br> 
+         <input type="hidden" name="hiddenField" value="hiddenValue">
+        <!-- drop down list -->
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="IN">INDIA</option>
+            <option value="US">USA</option>
+            <option value="UK" selected>UK</option>
+            
+        </select>
+
+        <br>
+        <br>
+        <textarea name="message">  </textarea>
+
+        <br>
+        <br>
+        <!-- input attributes in html -->
+         <form action="" method="post">
+        <fieldset>
+            <legend>Input Attributes</legend> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" required >
+             <br><br>
+              <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="email@gmail.com" autofocus >
+            <br><br> <label for="password">Password:</label>
+             <input type="password" id="password" name="password" required minlength="8">
+              <br><br> <input type="submit" value="Submit">
+        </fieldset>
+         </form>
+    </fieldset>
+ </form>
