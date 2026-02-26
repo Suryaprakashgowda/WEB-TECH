@@ -21,7 +21,7 @@ This repository contains multiple standalone HTML files and CSS examples that de
 
 ## 📂 Project Structure
 WEB-TECH/
-│
+└──html/
 ├── index.html
 ├── form.html
 ├── form1.html
@@ -38,8 +38,8 @@ WEB-TECH/
 ├── pseudo-class examples
 └── additional style files
 
-- The root folder contains multiple `.html` example files for different topics.
 - The `css/` folder contains stylesheets used by the HTML pages.
+- The `html/` folder contains stylesheets used by the HTML pages
 
 ---
 
