@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Landing Page</title>
+    <style>
+        nav{
+            height:75px;
+            
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav img{
+            height: 60px;
+        
+        }
+        .b1 img{
+            height: 150px;
+            width: 150px;
+        }
+        .b2 img{
+            height: 180px;
+            width: 180px;
+           
+        }
+        .b3 img{
+            height: 160px;
+            width: 160px;
+        }
+       
+        #parent{
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 10px solid black; */
+        }
+        .b1,.b2,.b3{
+        height: 400px;
+        width: 400px;
+        display: flex; 
+        flex-direction: column;  
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 4px;
+
+        }
+
+input{
+    height: 8px;
+    width: 150px;
+    padding:15px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+
+button{
+    height:35px;
+    width:150px;
+    border-radius:4px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+
+}
+
+        .logo{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uidlRjzqk5YH-NqxaFCP74QUYo-w74BvYw&s" alt="">
+        </div>
+    </nav>
+    <div id="parent">
+        <div class="b1">
+            <div class="logo">
+                <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy85NTM4NTEyZC1mZGUxLTRmNzMtYmQ1MS05Y2VmZjRlMjU0ZjEucG5n" alt="bike">
+            </div>
+               <div> <input type="text" placeholder="Enter kms"></div>
+                 <div><button>Book Now</button></div>
+        </div>
+        <div class="b2">
+            <div class="logo">
+                <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8zMDUxZTYwMi0xMGJiLTRlNjUtYjEyMi1lMzk0ZDgwYTljNDcucG5n" alt="car">
+                </div>
+                <div> <input type="text" placeholder="Enter kms"></div>
+                <div><button>Book Now</button></div>
+            
+        </div>
+        <div class="b3">   
+            <div class="logo">
+                <img src="https://clipart-library.com/2023/Uber_Auto_312x208_pixels_Mobile.png" alt="auto">
+                 
+                </div>
+                <div> <input type="text" placeholder="Enter kms"></div>
+                <div><button>Book Now</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
