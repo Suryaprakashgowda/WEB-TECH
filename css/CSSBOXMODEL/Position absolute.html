@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #super{
+        border: 10px solid black;
+        padding: 100px;
+        
+    }
+    
+    #parent{
+        height: 200px;
+        display: flex;
+        border:5px solid black;
+
+    }
+    #child1{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: red;
+    }
+    #child2{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: green;
+        position:absolute; 
+        top:20px;
+        left: 30px;
+        
+    }
+    #child3{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: blue;
+    }
+    #child4{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: yellow;
+    }   
+    </style>
+</head>
+<body>
+    <div id="super">
+    <div id="parent"> 
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div>
+
+    </div>
+    </div>
+</body>
+</html>

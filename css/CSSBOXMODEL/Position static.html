@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #parent{
+        height: 200px;
+        display: flex;
+        border:5px solid black;
+
+    }
+    #child1{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: red;
+    }
+    #child2{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: green;
+        position:static; 
+        /*default position is static, so it will be in the normal flow of the document, and it will not be affected by the top, bottom, left, right properties. */    
+        
+    }
+    #child3{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: blue;
+    }
+    #child4{
+        height: 50px;
+        width: 50px;
+        border:5px solid black;
+        background-color: yellow;
+    }   
+    </style>
+</head>
+<body>
+    <div id="parent"> 
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div>
+
+    </div>
+    
+</body>
+</html>
