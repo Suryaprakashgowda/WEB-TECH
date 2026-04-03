@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+
+<style>
+
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:lightblue;
+height:100vh;
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#parent{
+height:500px;
+width:320px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background-color:white;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+padding:20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+width:100%;
+}
+
+input{
+height:30px;
+border-radius:5px;
+padding:5px;
+}
+
+#check{
+display:flex;
+align-items:center;
+gap:5px;
+font-size:14px;
+}
+
+button{
+height:35px;
+background-color:blue;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:darkblue;
+}
+
+#login{
+text-align:center;
+font-size:14px;
+}
+h2{
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>
+</head>
+
+<body>
+
+<div id="parent">
+
+<form action="login.html">
+
+<h2>Signup Form</h2>
+
+<input type="text" placeholder="Username">
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Phone Number">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<div id="check">
+<input type="checkbox"> I agree to Terms & Conditions
+</div>
+
+<button>Signup</button>
+
+<div id="login">
+Already have an account? <a href="login.html">Login</a>
+</div>
+
+
+</form>
+
+</div>
+
+</body>
+</html>
