@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let num=[1,2,3,4,5,6]
+        
+        let result=num.filter((x,y)=>{
+            
+            console.log(x>3,y);
+            return x>3;
+        })
+        console.log(result);
+        
+        let maps=num.map((x,y)=>{
+            console.log(x>3,y);
+            console.log(x+3)
+            return x>3;
+
+        });
+        console.log(maps);
+        
+        let red=num.reduce((previousvalue,currentvalue)=>{
+            console.log(previousvalue,currentvalue);
+            
+            console.log(previousvalue*currentvalue);
+            return previousvalue+currentvalue;
+        }) //default value is first index value ex: 1 , 0 is user assigned value
+        // to perform multiplication user defined should '1' default same as above 
+        console.log(red);
+        
+
+        // task products
+
+        let products=[10000,24456,23444,10000,4500,5000,6000,24500,3450,1500,12300]
+
+        let filtedred=products.filter((x)=>{
+            return x>5000
+        })
+        console.log(filtedred);
+        
+        let gstTotal=filtedred.map((x)=>{
+            return x+x*0.18 // productCost+product*18% gst
+        });
+
+        console.log(gstTotal);
+
+        let totalBill=gstTotal.reduce((x,y)=>{
+            return x+y
+        },0)
+        console.log(totalBill);
+        
+    </script>
+</body>
+</html>

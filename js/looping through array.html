@@ -1,0 +1,26 @@
+//for..in //for...of //for...each
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    let fruits=['apple','banana','grapes','kiwi']
+
+      for (let i in fruits){
+          console.log(i);
+      }
+
+      for(let i of fruits){
+          console.log(i);
+      }
+
+      fruits.forEach((value,index)=>{
+          console.log(`${index}: ${value}`);
+      });
+    </script>
+  </body>
+</html>

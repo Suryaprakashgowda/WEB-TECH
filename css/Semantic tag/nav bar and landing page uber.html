@@ -94,15 +94,15 @@ button{
             <div class="logo">
                 <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy85NTM4NTEyZC1mZGUxLTRmNzMtYmQ1MS05Y2VmZjRlMjU0ZjEucG5n" alt="bike">
             </div>
-               <div> <input type="text" placeholder="Enter kms"></div>
-                 <div><button>Book Now</button></div>
+               <div> <input id="kilometerbike" type="text" placeholder="Enter kms"></div>
+                 <div><button onclick="bookbike()">Book Now</button></div>
         </div>
         <div class="b2">
             <div class="logo">
                 <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8zMDUxZTYwMi0xMGJiLTRlNjUtYjEyMi1lMzk0ZDgwYTljNDcucG5n" alt="car">
                 </div>
-                <div> <input type="text" placeholder="Enter kms"></div>
-                <div><button>Book Now</button></div>
+                <div> <input id="kilometercar" type="text" placeholder="Enter kms"></div>
+                <div><button onclick="bookcar()">Book Now</button></div>
             
         </div>
         <div class="b3">   
@@ -110,10 +110,27 @@ button{
                 <img src="https://clipart-library.com/2023/Uber_Auto_312x208_pixels_Mobile.png" alt="auto">
                  
                 </div>
-                <div> <input type="text" placeholder="Enter kms"></div>
-                <div><button>Book Now</button></div>
+                <div> <input id="kilometerauto" type="text" placeholder="Enter kms"></div>
+                <div><button onclick="bookauto()">Book Now</button></div>
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        function bookauto(){
+            let input=document.getElementById("kilometerauto").value;
+            alert(`Total fare for ${input} kms is ${input*10} Rs.`);
+        }
+        function bookbike(){
+            let input=document.getElementById("kilometerbike").value;
+            alert(`Total fare for ${input} kms is ${input*15} Rs.`);
+        }
+        function bookcar(){
+            let input=document.getElementById("kilometercar").value;
+            alert(`Total fare for ${input} kms is ${input*5} Rs.`);
+        }
+    </script>
 </body>
 </html>

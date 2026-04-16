@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        let arr=["apple","banana","grapes"];
+        console.log(arr);
+        console.log(arr[0]);
+        arr.push("orange");
+        console.log(arr);
+        arr.unshift("mango");
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        arr.shift();
+        console.log(arr);
+        console.log(arr.length);
+        //array destructuring
+        let [a,b,c]=arr;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        //array methods
+        let numbers=[1,2,3,4,5];
+        let squares=numbers.map(function(num){
+            return num*num;
+        });
+        console.log(squares);
+        console.log(numbers.indexOf(3)); // Output: 2
+        console.log(numbers.includes(4)); // Output: true
+        console.log(numbers.slice(0, 2)); // Output: [1, 2]
+        console.log(numbers.sort()); // Output: [1, 2, 3, 4, 5]
+        
+        
+    </script>
+</body>
+</html>
