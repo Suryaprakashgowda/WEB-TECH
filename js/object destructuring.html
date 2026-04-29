@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let user={
+            name:"surya",
+            email:"suryagowda@gmail.com",
+            age:25
+        }
+
+        //object destructuring
+        let {name,email,age}=user
+        console.log(name) //surya
+        console.log(email) //suryagowda@gmail.com
+        console.log(age) //25
+
+        //object destructuring with renaming
+        let {name:name1,email:email1,age:age1}=user
+        console.log(name1) //surya
+        console.log(email1) //suryagowda@gmail.com
+        console.log(age1) //25
+
+        //object destructuring with default values
+        let {name:name2,email:email2,age:age2,address="bangalore"}=user
+        console.log(name2) //surya 
+        console.log(email2) //suryagowda@gmail.com
+        console.log(age2) //25
+        console.log(address) //bangalore
+        
+    </script>
+</body>
+</html>

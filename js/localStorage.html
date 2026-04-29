@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let name=prompt("Enter your name")
+        let email=prompt("Enter your email")
+        //to add data
+        localStorage.setItem("username",name)
+        localStorage.setItem("email",email)
+
+        //to delete
+        localStorage.removeItem("email")
+
+        //to get data
+        let a=localStorage.getItem("username")
+        console.log(a)
+
+        console.log(localStorage.key(0)) //to get key name by index-->email
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let user={
+            name:"surya",
+            email:"surya@gmail.com"
+        }
+
+        //to freeze an object
+        Object.freeze(user)
+        user.name="surya gowda" //not allowed
+        user.age=25 //not allowed
+        console.log(user)
+
+        //not allowed to delete properties
+        delete user.email
+        console.log(user)
+        //adding new properties is not allowed
+        user.address="bangalore"
+        console.log(user)
+        //not allow  existing properties to modify
+        user.email="suryagowda123@gmail.com"
+        console.log(user)
+
+
+        console.log(Object.isFrozen(user)) //to check if object is frozen or not-->true
+        console.log(Object.isSealed(user)) //to check if object is sealed or not-->true
+
+        console.log(typeof user);
+        //to get all keys of an object
+        console.log(Object.keys(user)) //["name","email"]
+        //to get all values of an object
+        console.log(Object.values(user)) //["surya","surya@gmail.com"]
+        //to get all entries of an object
+        console.log(Object.entries(user)) //[["name","surya"],["email","surya@gmail.com"]]
+
+    </script>
+</body>
+</html>

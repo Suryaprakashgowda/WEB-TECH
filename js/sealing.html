@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let user={
+            name:"surya",
+            email:"surya@example.com"
+        };
+        //to seal an object
+        Object.seal(user)
+        user.name="surya gowda" //allowed
+        user.age=25 //not allowed
+        console.log(user)
+
+        //not allowed to delete properties
+        delete user.email
+        console.log(user)
+
+        //adding new properties is not allowed
+        user.address="bangalore"
+        console.log(user)
+
+        //only existing properties can be modified
+        user.email="suryagowda@gmail.com"
+        console.log(user)
+
+        console.log(Object.isSealed(user)) //to check if object is sealed or not-->true
+        console.log(Object.isFrozen(user)) //to check if object is frozen or not-->false
+
+        console.log(typeof user);
+    </script>
+</body>
+</html>
